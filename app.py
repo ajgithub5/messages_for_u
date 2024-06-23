@@ -21,6 +21,7 @@ messages = {
 
 selected_message = st.selectbox("Select a message from the dropdown with a smile.", list(messages.keys()))
 if selected_message:
+        st.balloons()
         st.text(messages[selected_message])
 
 
