@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.header("This space is a portion of my Heart 💓")
+st.header("💓 My Thoughts for MY LOVE for MY WIFE 💓")
 
 messages = {
         "Default": "Smile please!!!  Sadaa sa muh mt banana..!!!",
@@ -19,8 +19,15 @@ messages = {
         "Message 12": "Yes... It is true. I love you a lott. And I will always!!!",   
     }
 
-selected_message = st.selectbox("Select a message from the dropdown with a smile.", list(messages.keys()))
-if selected_message:
+
+
+
+on = st.toggle("Touch me")
+
+if on:
+    st.text("I know you love me... 	")
+    selected_message = st.selectbox("Select a message from the dropdown with a smile.", list(messages.keys()))
+    if selected_message:
         st.balloons()
         st.text(messages[selected_message])
 
