@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.header("💓 My Thoughts for MY LOVE for MY WIFE 💓")
+st.header("💓 My Thoughts of MY LOVE for MY WIFE 💓")
 
 messages = {
         "Default": "Smile please!!!  Sadaa sa muh mt banana..!!!",
@@ -29,7 +29,7 @@ if on:
     selected_message = st.selectbox("Select a message from the dropdown with a smile.", list(messages.keys()))
     if selected_message:
         st.balloons()
-        st.text(messages[selected_message])
+        st.markdown(messages[selected_message])
 
 
 
