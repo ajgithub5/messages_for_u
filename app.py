@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 st.header("💓 My Thoughts of MY LOVE for MY WIFE 💓")
 
 messages = {
@@ -29,7 +28,9 @@ if on:
     selected_message = st.selectbox("Select a message from the dropdown with a smile.", list(messages.keys()))
     if selected_message:
         st.balloons()
-        st.markdown(messages[selected_message])
+        col1, col2 = st.columns(2)
+        with col1:
+            st.markdown(messages[selected_message])
 
 
 
