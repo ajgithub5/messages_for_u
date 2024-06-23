@@ -4,6 +4,7 @@ import streamlit as st
 st.header("This space is a portion of my Heart 💓")
 
 messages = {
+        "Default": "Smile please!!!  Sadaa sa muh mt banana..!!!",
         "Message 1": "Good Morning sweetheart!!! I hope you had a great sleep. So get up and take bath first..",
         "Message 2": "I missed you very much my love!!! So never think I don't miss you. I always remember you.",
         "Message 3": "Your smile is my favorite expression, with those dracula teeths that lifts my spirits.",
